@@ -1,0 +1,15 @@
+{
+  "name": "ep_print",
+  "description": "Support for printing",
+  "version": "0.0.1",
+  "author": {
+    "name": "johnyma22",
+    "email": "john@mclear.co.uk",
+    "url": "John McLear"
+  },
+  "contributors": [],
+  "dependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
