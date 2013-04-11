@@ -5,11 +5,14 @@ exports.postAceInit = function(name, context, cb){
     var oldEditbarHeight = $('#editbar').height();
     var beforePrint = function() {
       var padId = pad.getPadId(); // get the pad ID
-      var padHTMLUrl = padId + "/export/html"; // get the export URL
+      var ts = new Date().getTime(); // Get the timestamp
+      var padHTMLUrl = padId + "/export/html?ts="+ts; // get the export URL
+      $('#chaticon').hide();
+      $('#editorcontainerbox').hide();
       $('#editbar').height(0); // it wont print if editbar doesn't exist..
       //  $('#editbar, #editorcontainerbox').hide(); // hide other contents
       if($('#print').length == 0){ // append if doesnt exist
-        $('body').append("<div id='print' style='position:fixed; margin-top:20px; top: 0; left: 0; right: 0; bottom: 0;z-index:9999'></div>")
+        $('body').append("<div id='print' style='margin-top:40px; top: 0; left: 0; right: 0; height:100%; overflow:auto;z-index:9999; overflow-x:hidden;'></div>")
       }
 
       $.get(padHTMLUrl, function(data) {
@@ -21,6 +24,8 @@ exports.postAceInit = function(name, context, cb){
     var afterPrint = function() {
       setTimeout(function(){
         $('#print').hide();
+        $('#chaticon').show();
+        $('#editorcontainerbox').show();
         $('#editbar').height(oldEditbarHeight); 
       }, 500);
     };
