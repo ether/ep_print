@@ -11,5 +11,9 @@
   "dependencies": {},
   "engines": {
     "node": "*"
+  },
+  "repository" : {
+    "type" : "git",
+    "url"  : "https://github.com/JohnMcLear/ep_print.git"
   }
 }
