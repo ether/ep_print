@@ -1,0 +1,53 @@
+/* The outer container */
+
+@media print{
+  #editorcontainerbox, #editorcontainer{
+    display:block;
+    top:0 !important;
+    left:0;
+    right:0;
+    bottom:0;
+    position:absolute;
+    z-index:901;
+  }
+  #editbar{
+    display:none;
+  }
+  #header, #footer{
+    z-index:902;
+  }
+  .page_view{
+    padding:0px !important;
+  }
+
+}
+
+
+/* The IFRAME inner */
+@media print{
+  #editorcontainerbox{
+    height:auto;
+    max-width:650px;
+  }
+  #editorcontainer, #editorcontainer > iframe{
+    padding:0 !important;
+    overflow:hidden;
+  }
+  #editorcontainerbox{
+    overflow:hidden;
+  }
+  #outerdocbody{
+    overflow:hidden;
+  }
+  #editorcontainer > iframe{
+    width:100%;
+    max-width:100%;
+    border-radius: none;
+    border: none;
+    top:0;
+  }
+  .page_view{
+    padding:0px !important;
+  }
+
+}
