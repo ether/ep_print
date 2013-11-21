@@ -1,0 +1,36 @@
+/* The outer container */
+
+@media print{
+  #editorcontainerbox, #editorcontainer{
+    display:none;
+    top:0 !important;
+    left:0;
+    right:0;
+    bottom:0;
+    position:absolute;
+    z-index:901;
+  }
+  #editbar{
+    display:none;
+  }
+  #header, #footer{
+    z-index:902;
+  }
+  .page_view{
+    padding:0px !important;
+  }
+  #print{
+    display:block;
+    z-index:9999;
+  }
+  /* Required for Chromium Bug with Page View 
+  See http://stackoverflow.com/questions/1630819/google-chrome-printing-page-breaks */  
+  */
+  #print > div{
+    position:relative;
+  }
+  #chaticon{
+    display:none;
+  }
+}
+

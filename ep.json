@@ -4,6 +4,9 @@
       "name": "ep_print",
       "client_hooks": {
         "postAceInit": "ep_print/static/js/print.js"
+      },
+      "hooks":{
+        "eejsBlock_styles": "ep_print/eejs.js"
       }
     }
   ]
