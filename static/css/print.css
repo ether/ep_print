@@ -10,9 +10,6 @@
     position:absolute;
     z-index:901;
   }
-  #editbar{
-    display:none;
-  }
   #header, #footer{
     z-index:902;
   }
@@ -29,7 +26,7 @@
   #print > div{
     position:relative;
   }
-  #chaticon{
+  #editbar, #chaticon, .popup{
     display:none;
   }
 }
