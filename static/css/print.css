@@ -21,7 +21,7 @@
     z-index:9999;
   }
   /* Required for Chromium Bug with Page View 
-  See http://stackoverflow.com/questions/1630819/google-chrome-printing-page-breaks */  
+  See http://stackoverflow.com/questions/1630819/google-chrome-printing-page-breaks
   */
   #print > div{
     position:relative;
