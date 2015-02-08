@@ -3,10 +3,10 @@
     {
       "name": "ep_print",
       "client_hooks": {
-        "postAceInit": "ep_print/static/js/print.js"
+        "postAceInit": "ep_print/static/js/print"
       },
       "hooks":{
-        "eejsBlock_styles": "ep_print/eejs.js"
+        "eejsBlock_styles": "ep_print/eejs"
       }
     }
   ]
