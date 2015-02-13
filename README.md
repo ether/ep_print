@@ -1,5 +1,4 @@
 # Print etherpad documents
-=========================
 
 ## Features
 * Prints page breaks
