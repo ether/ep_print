@@ -6,7 +6,8 @@
         "postAceInit": "ep_print/static/js/print"
       },
       "hooks":{
-        "eejsBlock_styles": "ep_print/eejs"
+        "eejsBlock_styles": "ep_print/eejs",
+        "eejsBlock_editbarMenuRight": "ep_print/eejs"
       }
     }
   ]

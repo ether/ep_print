@@ -1,5 +1,9 @@
 /* The outer container */
 
+#print{
+  display:none;
+}
+
 @media print{
   #editorcontainerbox, #editorcontainer{
     display:none;
@@ -9,6 +13,13 @@
     bottom:0;
     position:absolute;
     z-index:901;
+  }
+
+  #chaticon, #users, #chatbox{
+    display:none !important;
+  }
+  .popup, .toolbar{
+    display:none !important;
   }
   #header, #footer{
     z-index:902;
@@ -26,8 +37,15 @@
   #print > div{
     position:relative;
   }
-  #editbar, #chaticon, .popup{
-    display:none;
-  }
 }
 
+/* Button formatting */
+.ep_print{
+font-family:font-awesome;
+}
+.ep_print > .buttonicon {
+  top:2px!important;
+}
+.ep_print > .buttonicon:before{
+  content:"\e801";
+}

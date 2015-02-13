@@ -2,7 +2,8 @@ exports.postAceInit = function(name, context, cb){
 
   $('body').append("<div id='print'></div>");
 
-  (function() { // From http://stackoverflow.com/questions/1234008/detecting-browser-print-event/11060206#11060206 -- License unknown
+  (function() { 
+    // From http://stackoverflow.com/questions/1234008/detecting-browser-print-event/11060206#11060206 -- License unknown
 
     var oldEditbarHeight = $('#editbar').height();
     var beforePrint = function() {
