@@ -1,19 +1,14 @@
 const eejs = require('ep_etherpad-lite/node/eejs/');
 const settings = require('ep_etherpad-lite/node/utils/Settings');
 
-exports.eejsBlock_styles = function (hook_name, args, cb) {
-  args.content += "<link href='../static/plugins/ep_print/static/css/print.css' rel='stylesheet'>";
-  return cb();
+exports.eejsBlock_styles = (hook_name, args, cb) => {
+  args.content += `<link href='../static/plugins/ep_print/static/css/print.css' rel='stylesheet'>`;
+  cb();
 };
 
-exports.eejsBlock_editbarMenuRight = function (hook_name, args, cb) {
-  if (settings.ep_print) {
-    if (settings.ep_print.hideButton === true) {
-      return cb();
-      // do nothing
-    }
-  } else {
-    args.content = eejs.require('ep_print/templates/editbarButtons.ejs') + args.content;
-    return cb();
-  }
+exports.eejsBlock_editbarMenuRight = (hook_name, args, cb) => {
+  if (settings.ep_print && settings.ep_print.hideButton === true) return cb();
+
+  args.content = eejs.require('ep_print/templates/editbarButtons.ejs') + args.content;
+  cb();
 };
