@@ -4,7 +4,7 @@ const eejs = require('ep_etherpad-lite/node/eejs/');
 const settings = require('ep_etherpad-lite/node/utils/Settings');
 
 exports.eejsBlock_styles = (hook_name, args, cb) => {
-  args.content += 
+  args.content +=
       '<link href=\'../static/plugins/ep_print/static/css/print.css\' rel=\'stylesheet\'>';
   cb();
 };
