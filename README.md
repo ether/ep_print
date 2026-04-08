@@ -1,4 +1,4 @@
-![Publish Status](https://github.com/ether/ep_print/workflows/Node.js%20Package/badge.svg) ![Backend Tests Status](https://github.com/ether/ep_print/workflows/Backend%20tests/badge.svg)
+![Publish Status](https://github.com/ether/ep_print/workflows/Node.js%20Package/badge.svg) [![Backend Tests Status](https://github.com/ether/ep_print/actions/workflows/test-and-release.yml/badge.svg)](https://github.com/ether/ep_print/actions/workflows/test-and-release.yml)
 
 # Print button for printing pads
 
