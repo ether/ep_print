@@ -1,7 +1,7 @@
 {
   "name": "ep_print",
   "description": "Support for printing, works cross browser, supports page breaks",
-  "version": "11.0.10",
+  "version": "11.0.11",
   "author": {
     "name": "johnyma22",
     "email": "john@mclear.co.uk",
