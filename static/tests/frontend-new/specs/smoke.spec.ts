@@ -10,4 +10,9 @@ test.describe('ep_print', () => {
     const padBody = await getPadBody(page);
     await expect(padBody).toBeVisible();
   });
+
+  test('print button exposes a localization key', async ({page}) => {
+    const printButton = page.locator('#printButton a.ep_print');
+    await expect(printButton).toHaveAttribute('data-l10n-id', 'ep_print.toolbar.print');
+  });
 });
